@@ -1,0 +1,25 @@
+void main() {
+
+  String? nome = null;
+  
+  int? comprimento = nome?.length;
+  int valor = comprimento ?? 0;
+  
+  print("${comprimento}");
+  
+  
+  //para que a variavel possa ser nula usa o ?
+  
+  
+  //executando 
+  int res = somar (440,10);
+  print("resultado: $res");
+  imprimirNomeCompleto(sobrenome: "Gabriel", "Igor");
+}
+
+//declaração
+somar(n1,n2) => n1+n2;
+
+void imprimirNomeCompleto(String nome, {String sobrenome =""}){
+  print("Nome: $nome, Sobrenome: $sobrenome");
+}
